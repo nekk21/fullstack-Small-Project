@@ -1,0 +1,28 @@
+version: '3'
+services:
+    server:
+        build: ./server
+        ports:
+            - '3000:3000'
+        container_name: server
+        depends_on:
+            - db
+    client:
+        build: ./client
+        ports:
+            - '80:80'
+        container_name: client
+    db:
+        image: postgres
+        restart: always
+        ports:
+            - 5432:5432
+        volumes:
+            - db-data:/var/lib/postgresql/data
+        environment:
+            POSTGRES_PASSWORD: example
+            POSTGRES_USER: example
+        container_name: db
+volumes:
+    db-data:
+        driver: local

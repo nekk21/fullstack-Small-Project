@@ -1,0 +1,15 @@
+export const LOG_OUT = 'LOG_OUT'
+export const LOG_IN = 'LOG_IN'
+export const REGISTER = 'REGISTER'
+export const ALERT_MESSAGE = 'ALERT_MESSAGE'
+export const HIDE_ALERT_MESSAGE = 'HIDE_ALERT_MESSAGE'
+export const POST_COMPANY = 'POST_COMPANY'
+export const UPDATE_USER = 'UPDATE_USER'
+export const LOGIN_DATA_LOADER = 'LOGIN_DATA_LOADER'
+
+export const GET_USER_PROFILE = 'GET_USER_PROFILE'
+export const GET_CARDS_COMPANY = 'GET_CARDS_COMPANY'
+export const GET_USER_IMAGE = 'GET_USER_IMAGE'
+export const GET_COMPANY_IMAGES = 'GET_COMPANY_IMAGES'
+
+export const DELETE_COMPANY = 'DELETE_COMPANY'
