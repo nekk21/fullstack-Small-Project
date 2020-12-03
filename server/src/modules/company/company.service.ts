@@ -87,8 +87,9 @@ export class CompanyService {
             const errors = { user: 'User not found' }
             throw new HttpException({ errors }, 402)
         }
-        company.user = user
-
+            company.user = user
+            company.image = ''
+        
         const errors = await validate(company)
         if (errors.length > 0) {
             throw new HttpException(
