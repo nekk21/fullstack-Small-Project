@@ -88,7 +88,8 @@ export class CompanyService {
             throw new HttpException({ errors }, 402)
         }
         company.user = user
-
+        company.image = ''
+        
         const errors = await validate(company)
         if (errors.length > 0) {
             throw new HttpException(
