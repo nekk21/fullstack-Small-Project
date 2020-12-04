@@ -3,6 +3,8 @@ import CompanyCards from '../Components/CompanyCards'
 import Navbar from '../Components/Navbar'
 import { Redirect } from 'react-router-dom'
 import styled from 'styled-components'
+import { useDispatch } from 'react-redux'
+import hidealertMessage from '../redux/actions/actions'
 
 const StyledUserPage = styled.div`
     .myButon {
@@ -14,6 +16,7 @@ const StyledUserPage = styled.div`
 
 function UserPage() {
     const [secsuess, setSecsuess] = useState(false)
+    const dispatch = useDispatch()
 
     if (secsuess) {
         return <Redirect to="/ConpanyCreatorPage" />
@@ -24,7 +27,10 @@ function UserPage() {
             <div className="myButon">
                 <button
                     className="btn waves-effect waves-light #757575 grey darken-1"
-                    onClick={() => setSecsuess(true)}
+                    onClick={() => {
+                        dispatch(hidealertMessage())
+                        setSecsuess(true)
+                    }}
                 >
                     <i className="material-icons right">work</i>
                     Add Company
