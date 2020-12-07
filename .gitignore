@@ -1,11 +1,10 @@
 # compiled output
 /dist
-/files
 /node_modules
 */node_modules
 */build
 */dist
-*/files
+
 
 # Logs
 logs
