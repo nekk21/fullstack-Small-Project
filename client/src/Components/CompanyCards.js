@@ -126,7 +126,7 @@ function CompanyCards() {
                                     {company.serviceOfActivity}
                                 </p>
                                 <p>
-                                    <strong>Adress:</strong> {company.adress}
+                                    <strong>Adress:</strong> {company.address}
                                 </p>
                             </div>
                         </div>

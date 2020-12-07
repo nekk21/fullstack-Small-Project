@@ -4,7 +4,7 @@ import Navbar from '../Components/Navbar'
 import { Redirect } from 'react-router-dom'
 import styled from 'styled-components'
 import { useDispatch } from 'react-redux'
-import hidealertMessage from '../redux/actions/actions'
+import { hidealertMessage } from '../redux/actions/actions'
 
 const StyledUserPage = styled.div`
     .myButon {
